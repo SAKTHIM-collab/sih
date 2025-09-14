@@ -37,10 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // ✅ Update detail button to redirect
     const detailButtons = document.querySelectorAll('.detail-button');
     detailButtons.forEach(button => {
         button.addEventListener('click', () => {
-            alert('Detailed analysis feature will be implemented soon!');
+            window.open(
+                "https://drive.google.com/file/d/1iYz-p6fTgA3u0h8m2QdJmMdSqPx1rX9x/view?usp=sharing", 
+                "_blank"
+            );
         });
     });
     

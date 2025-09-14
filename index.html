@@ -1,183 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Flare Prediction Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar Flare Prediction Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>SolarFlare<span>Predict</span></h1>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#dashboard">Dashboard</a></li>
-                    <li><a href="#predictions">Predictions</a></li>
-                    <li><a href="#visualizations">Visualizations</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>SolarFlare<span>Predict</span></h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#predictions">Predictions</a></li>
+          <li><a href="#visualizations">Visualizations</a></li>
+          <li><a href="#internal-hackathon">Internal Hackathon</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Predicting Solar Flares with AI</h2>
+          <p>
+            Advanced machine learning models to forecast solar activity and
+            protect space infrastructure
+          </p>
+          <button class="cta-button">Explore Predictions</button>
         </div>
-    </header>
-
-    <main class="main-content">
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Predicting Solar Flares with AI</h2>
-                    <p>Advanced machine learning models to forecast solar activity and protect space infrastructure</p>
-                    <button class="cta-button">Explore Predictions</button>
-                </div>
-                <div class="hero-visual">
-                    <div class="sun-animation">
-                        <div class="sun-core"></div>
-                        <div class="solar-flare flare-1"></div>
-                        <div class="solar-flare flare-2"></div>
-                        <div class="solar-flare flare-3"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="dashboard" class="dashboard">
-            <div class="container">
-                <h2 class="section-title">Real-time Monitoring</h2>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-icon">☀️</div>
-                        <h3>Solar Activity</h3>
-                        <div class="stat-value">Moderate</div>
-                        <div class="stat-graph" id="activity-graph"></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">⚡</div>
-                        <h3>Flare Probability</h3>
-                        <div class="stat-value">24%</div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 24%"></div>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">🛰️</div>
-                        <h3>Satellite Impact</h3>
-                        <div class="stat-value">Low Risk</div>
-                        <div class="risk-indicator">
-                            <div class="risk-level low"></div>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">🌍</div>
-                        <h3>Earth Impact</h3>
-                        <div class="stat-value">Minimal</div>
-                        <div class="impact-visual">
-                            <div class="earth"></div>
-                            <div class="solar-wind"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="predictions" class="predictions">
-            <div class="container">
-                <h2 class="section-title">Flare Predictions</h2>
-                <div class="prediction-container">
-                    <div class="prediction-chart">
-                        <div class="chart-placeholder">
-                            <p>Prediction Graph Placeholder</p>
-                            <p class="placeholder-note">[AI Model prediction graph will be displayed here]</p>
-                        </div>
-                    </div>
-                    <div class="prediction-details">
-                        <h3>Next 48 Hours Forecast</h3>
-                        <div class forecast-list>
-                            <div class="forecast-item">
-                                <div class="forecast-time">12-24 hours</div>
-                                <div class="forecast-value">M-class: 35% probability</div>
-                            </div>
-                            <div class="forecast-item">
-                                <div class="forecast-time">24-48 hours</div>
-                                <div class="forecast-value">X-class: 15% probability</div>
-                            </div>
-                        </div>
-                        <button class="detail-button">View Detailed Analysis</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="visualizations" class="visualizations">
-            <div class="container">
-                <h2 class="section-title">Data Visualizations</h2>
-                <div class="viz-grid">
-                    <div class="viz-card">
-                        <h3>Solar Imagery</h3>
-                        <div class="image-placeholder">
-                            <p>Solar Image Placeholder</p>
-                            <p class="placeholder-note">[Latest solar images will be displayed here]</p>
-                        </div>
-                    </div>
-                    <div class="viz-card">
-                        <h3>Video Explanation</h3>
-                        <div class="video-placeholder">
-                            <p>Video Presentation Placeholder</p>
-                            <p class="placeholder-note">[7-minute project video will be embedded here]</p>
-                        </div>
-                    </div>
-                    <div class="viz-card">
-                        <h3>Project PPT</h3>
-                        <div class="ppt-placeholder">
-                            <p>Presentation Slides</p>
-                            <p class="placeholder-note">[Project presentation slides will be linked here]</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About Our Project</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-avatar"></div>
-                        <h3>Team Member 1</h3>
-                        <p>Role</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-avatar"></div>
-                        <h3>Team Member 2</h3>
-                        <p>Role</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-avatar"></div>
-                        <h3>Team Member 3</h3>
-                        <p>Role</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-avatar"></div>
-                        <h3>Team Member 4</h3>
-                        <p>Role</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 SolarFlarePredict - Nakshatra Club SIH Project</p>
+        <div class="hero-visual">
+          <div class="sun-animation">
+            <div class="sun-core"></div>
+            <div class="solar-flare flare-1"></div>
+            <div class="solar-flare flare-2"></div>
+            <div class="solar-flare flare-3"></div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="js/script.js"></script>
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="dashboard">
+      <div class="container">
+        <h2 class="section-title">Real-time Monitoring</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">☀️</div>
+            <h3>Solar Activity</h3>
+            <div class="stat-value">Moderate</div>
+            <div class="stat-graph" id="activity-graph"></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⚡</div>
+            <h3>Flare Probability</h3>
+            <div class="stat-value">24%</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 24%"></div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🛰️</div>
+            <h3>Satellite Impact</h3>
+            <div class="stat-value">Low Risk</div>
+            <div class="risk-indicator">
+              <div class="risk-level low"></div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🌍</div>
+            <h3>Earth Impact</h3>
+            <div class="stat-value">Minimal</div>
+            <div class="impact-visual">
+              <div class="earth"></div>
+              <div class="solar-wind"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREDICTIONS -->
+    <section id="predictions" class="predictions">
+      <div class="container">
+        <h2 class="section-title">Flare Predictions</h2>
+        <div class="prediction-details-only">
+          <h3>Next 48 Hours Forecast</h3>
+          <div class="forecast-list">
+            <div class="forecast-item">
+              <div class="forecast-time">12-24 hours</div>
+              <div class="forecast-value">M-class: 35% probability</div>
+            </div>
+            <div class="forecast-item">
+              <div class="forecast-time">24-48 hours</div>
+              <div class="forecast-value">X-class: 15% probability</div>
+            </div>
+          </div>
+          <button class="detail-button">View Detailed Analysis</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISUALIZATIONS -->
+    <section id="visualizations" class="visualizations">
+      <div class="container">
+        <h2 class="section-title">Data Visualizations</h2>
+        <div class="viz-grid">
+          <div class="viz-card">
+            <h3>Solar Imagery</h3>
+            <div class="image-placeholder">
+              <iframe
+                src="https://drive.google.com/file/d/1_t7vIHKB1BsPjBTRZfANnjpYZmWvmcKw/preview"
+                width="100%"
+                height="200"
+              ></iframe>
+              <p class="placeholder-note">Embedded latest solar image sample</p>
+            </div>
+          </div>
+          <div class="viz-card">
+            <h3>Video Explanation</h3>
+            <div class="video-placeholder">
+              <iframe
+                src="https://drive.google.com/file/d/1iYz-p6fTgA3u0h8m2QdJmMdSqPx1rX9x/preview"
+                width="100%"
+                height="300"
+                allow="autoplay"
+              ></iframe>
+              <p class="placeholder-note">
+                7-minute project video embedded here
+              </p>
+            </div>
+          </div>
+          <div class="viz-card">
+            <h3>Project PPT</h3>
+            <div class="ppt-placeholder">
+              <iframe
+                src="https://drive.google.com/file/d/1FWzZWv8wsPdhWyIvvZ9q8ryJYPp0HuJk/preview"
+                width="100%"
+                height="200"
+              ></iframe>
+              <p class="placeholder-note">
+                Click full screen to view the presentation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNAL HACKATHON -->
+    <section id="internal-hackathon" class="internal-hackathon">
+      <div class="container">
+        <h2 class="section-title">Internal Hackathon</h2>
+        <div class="hackathon-card">
+          <p>
+            Our <strong>Internal Hackathon</strong> focused on building a deep
+            learning powered <em>Solar Flare Prediction</em> system. The
+            presentation gave an in-depth technical perspective covering solar
+            science, dataset creation, ResNet architecture, and Explainable AI.
+          </p>
+          <ul>
+            <li>
+              <strong>Solar Flares:</strong> Radiation bursts disrupting
+              satellites, GPS, grids, aviation.
+            </li>
+            <li>
+              <strong>Dataset:</strong> SunPy solar images + CSV (flare/no-flare
+              labels).
+            </li>
+            <li>
+              <strong>Model:</strong> ResNet CNN – scalable, efficient for
+              classification.
+            </li>
+            <li>
+              <strong>Explainability:</strong> Captum XAI with Saliency Maps to
+              show flare regions.
+            </li>
+            <li>
+              <strong>Workflow:</strong> Collect → Train ResNet → Evaluate →
+              Visualize.
+            </li>
+          </ul>
+          <div class="hackathon-resources">
+            <h3>Resources</h3>
+            <div class="resource-links">
+              <a
+                href="https://docs.google.com/presentation/d/1oOpslHGVYFkP91tX_vG2lk0VfJa0K8Dr/edit?slide=id.p1#slide=id.p1"
+                target="_blank"
+                class="resource-button"
+                >Internal Hackathon Slides</a
+              >
+              <a
+                href="https://docs.google.com/presentation/d/1tZ-0hJ-J-Ja7Yq5A6aoZGpPUjJ6JDxwJ/edit"
+                target="_blank"
+                class="resource-button"
+                >SIH Official Presentation</a
+              >
+              <a
+                href="https://drive.google.com/file/d/1iYz-p6fTgA3u0h8m2QdJmMdSqPx1rX9x/view?usp=sharing"
+                target="_blank"
+                class="resource-button"
+                >Project Video</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Our Project</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-avatar"></div>
+            <h3>Meet M</h3>
+            <p>Team Leader</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar"></div>
+            <h3>Vinay F</h3>
+            <p>Member</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar"></div>
+            <h3>Priya</h3>
+            <p>Member</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar"></div>
+            <h3>Sakthi M</h3>
+            <p>Member</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar"></div>
+            <h3>Vishnu C</h3>
+            <p>Member</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar"></div>
+            <h3>Romit R</h3>
+            <p>Member</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 SolarFlarePredict - Nakshatra Club SIH Project</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
